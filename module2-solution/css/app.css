@@ -1,0 +1,100 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 15px; 
+  text-align:center;
+  font-family: fantasy;
+  font-size: 1.75em;
+}
+
+p { 
+  border: 1px solid black;
+  background-color: #A6A6A6;
+  width: auto;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: Helvetica;
+}
+
+div#container {
+  position: relative;
+}
+
+#chicken {
+  background-color: #FFC0CB;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding-top: 5px;
+  margin-top: 0px;
+  font-family: fantasy;
+  font-size: 1.25em;
+}
+
+#beef {
+  background-color: #FF0000;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding-top: 5px;
+  margin-top: 0px;
+  font-family: fantasy;
+  font-size: 1.25em;
+}
+
+#sushi {
+  background-color: #FFD700;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  padding-top: 5px;
+  margin-top: 0px;
+  font-family: fantasy;
+  font-size: 1.25em;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Destock devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 50%;
+  }
+}
+
